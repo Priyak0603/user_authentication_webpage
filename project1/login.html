@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+        .flx1{
+            height: 600px;
+            width: 80%;
+            margin: auto;
+            margin-top: 30px;
+            padding: 15px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-image: url('https://static.vecteezy.com/system/resources/previews/020/525/190/non_2x/abstract-background-design-background-texture-design-with-abstract-style-creative-illustration-for-advertising-posters-business-cards-flyers-websites-banners-covers-landings-pages-etc-free-vector.jpg');
+            background-repeat: no-repeat;
+        }
+
+        div h1{
+            text-align: left;
+            font-size: 40px;
+            color: aqua;
+        }
+        div .vertical-line {
+            border-left: 1px solid aqua; /* Adjust the color and thickness of the line as needed */
+            height: 270px; /* Adjust the height of the line as needed */
+            width: 0;
+        }
+        div i{
+            text-align: center;
+            font-size: 67px;
+            color: aqua;
+        }
+        div form{
+            padding-top: 20px;
+        }
+        div form label{
+            font-size: 30px;
+            color: aqua;
+        }
+        div form input{
+            font-size: 30px;
+        }
+        div form button{
+            margin-top: 35px;
+            margin-left: 33px;
+            color: rgb(3, 42, 74);
+            padding: 35px;
+            font-size: 25px;
+            background-color:rgba(2, 253, 253, 0.5);
+            border: 1px solid transparent;
+        }
+        div form button:hover{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="flx1">
+        <div><h1>Faculty <br>Login<br> Dashboard</h1></div>
+        <div class="vertical-line"></div>
+        <div>
+            <form style="text-align:center;" height="100%" action="pro1_login.php" method="post">
+                <i class="fa-regular fa-user"></i><br><br><br><br>
+                <label for="uname">Username:</label>
+                <input id="facul_name" name="facul_name" type="text"><br><br>
+                <label for="upass">Password:</label>
+                <input id="upass" name="upass" type="password"><br><br>
+                <button id="login" name="login">login</button>
+                <br><br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
